@@ -1,0 +1,25 @@
+html
+	head
+		title Mi Primera Página con express 
+
+	body
+		//!= es para decir que se va imprimir algo en html
+		//h1!= hola
+		// - para decir que estamos usando java script unbuferred code
+		- var arreglo = [1,2,3,4,5];
+		//- for (var i = arreglo.length - 1; i>=0; i--)
+			// El igual es como el anterior pero se usa para imprimir en javascript se llama bufered code
+			//p!= "<h1>"+arreglo[i]+"</h1>"
+			// Con el gato se usa para imprimir y combinar html y java script
+			//p Hola #{arreglo[i] + 1}
+			//el punto se usa para la interpolación de etiquetas 
+			p. 
+				Hola haz click en #[a(href="google.com") este link]	
+		each item in arreglo
+			case item
+				when 1 
+					p El item era uno
+				when 2
+					p El item era dos
+				default
+					p El item no era ni uno, ni dos
